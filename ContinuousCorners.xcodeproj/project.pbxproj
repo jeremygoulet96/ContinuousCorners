@@ -12,8 +12,8 @@
 		22607295210975FF00CD6DF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22607293210975FF00CD6DF6 /* Main.storyboard */; };
 		226072972109760100CD6DF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226072962109760100CD6DF6 /* Assets.xcassets */; };
 		2260729A2109760100CD6DF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226072982109760100CD6DF6 /* LaunchScreen.storyboard */; };
-		226072A52109760100CD6DF6 /* ContinuousCornersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226072A42109760100CD6DF6 /* ContinuousCornersTests.swift */; };
-		226072B02109760100CD6DF6 /* ContinuousCornersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226072AF2109760100CD6DF6 /* ContinuousCornersUITests.swift */; };
+		226072BE2109761E00CD6DF6 /* HiddenKeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226072BD2109761E00CD6DF6 /* HiddenKeyPath.swift */; };
+		226072C02109764200CD6DF6 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226072BF2109764200CD6DF6 /* RoundedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +42,9 @@
 		226072992109760100CD6DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2260729B2109760100CD6DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		226072A02109760100CD6DF6 /* ContinuousCornersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContinuousCornersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		226072A42109760100CD6DF6 /* ContinuousCornersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuousCornersTests.swift; sourceTree = "<group>"; };
-		226072A62109760100CD6DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		226072AB2109760100CD6DF6 /* ContinuousCornersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContinuousCornersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		226072AF2109760100CD6DF6 /* ContinuousCornersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuousCornersUITests.swift; sourceTree = "<group>"; };
-		226072B12109760100CD6DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		226072BD2109761E00CD6DF6 /* HiddenKeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenKeyPath.swift; sourceTree = "<group>"; };
+		226072BF2109764200CD6DF6 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				2260728E210975FF00CD6DF6 /* ContinuousCorners */,
-				226072A32109760100CD6DF6 /* ContinuousCornersTests */,
-				226072AE2109760100CD6DF6 /* ContinuousCornersUITests */,
 				2260728D210975FF00CD6DF6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,26 +99,10 @@
 				226072962109760100CD6DF6 /* Assets.xcassets */,
 				226072982109760100CD6DF6 /* LaunchScreen.storyboard */,
 				2260729B2109760100CD6DF6 /* Info.plist */,
+				226072BD2109761E00CD6DF6 /* HiddenKeyPath.swift */,
+				226072BF2109764200CD6DF6 /* RoundedView.swift */,
 			);
 			path = ContinuousCorners;
-			sourceTree = "<group>";
-		};
-		226072A32109760100CD6DF6 /* ContinuousCornersTests */ = {
-			isa = PBXGroup;
-			children = (
-				226072A42109760100CD6DF6 /* ContinuousCornersTests.swift */,
-				226072A62109760100CD6DF6 /* Info.plist */,
-			);
-			path = ContinuousCornersTests;
-			sourceTree = "<group>";
-		};
-		226072AE2109760100CD6DF6 /* ContinuousCornersUITests */ = {
-			isa = PBXGroup;
-			children = (
-				226072AF2109760100CD6DF6 /* ContinuousCornersUITests.swift */,
-				226072B12109760100CD6DF6 /* Info.plist */,
-			);
-			path = ContinuousCornersUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +236,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				226072C02109764200CD6DF6 /* RoundedView.swift in Sources */,
 				22607292210975FF00CD6DF6 /* ViewController.swift in Sources */,
 				22607290210975FF00CD6DF6 /* AppDelegate.swift in Sources */,
+				226072BE2109761E00CD6DF6 /* HiddenKeyPath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +247,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				226072A52109760100CD6DF6 /* ContinuousCornersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				226072B02109760100CD6DF6 /* ContinuousCornersUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +420,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ca.jeremygoulet.ContinuousCorners;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -458,7 +438,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ca.jeremygoulet.ContinuousCorners;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
